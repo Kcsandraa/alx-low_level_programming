@@ -1,10 +1,14 @@
 #include <stdio.h>
-#include "holberton.h"
 /**
  * main - prints the biggest prime factor of a number.
- *
+ * @n: parameter to be checked
  * Return: Always 0.
  */
+
+int isPrime(long int n);
+
+long int biggestFactor(long int n);
+
 int main(void)
 {
 	long int number;
@@ -52,14 +56,14 @@ int isPrime(long int n)
 }
 /**
  * biggestFactor - returns the biggest prime factor of a number
- * @a: number to check
+ * @n: number to check
  * Return: biggest factor
  */
-long int biggestFactor(long int a)
+long int biggestFactor(long int n)
 {
 	long int i, factor;
 
-	factor = a;
+	factor = n;
 	for (i = 2; i <= factor; i++)
 	{
 		if (isPrime(factor) == 1)
