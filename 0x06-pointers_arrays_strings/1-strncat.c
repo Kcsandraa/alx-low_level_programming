@@ -5,6 +5,7 @@
  *
  * @dest: parameter
  * @src: parameter
+ * @n: parameter
  *
  * Return:  a pointer to the resulting string dest
  */
