@@ -30,10 +30,6 @@ char *leet(char *c)
 		{
 			c[s] = 49;
 		}
-		else
-		{
-			c[s] = c[s];
-		}
 	}
 	return (c);
 }
