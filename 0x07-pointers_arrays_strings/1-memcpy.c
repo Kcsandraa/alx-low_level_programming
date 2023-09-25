@@ -5,20 +5,16 @@
  * @dest: the address of memory to print
  * @src: the address of memory to print
  * @n: size of memory
- * Return: pointer to dest 
+ * Return: a pointer to dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i = 0;
 
-	while (i < n)
+	for (i = 0; i < n; i++)
 	{
-		*dest = *src;
-		src++;
-		dest++;
-		i++;
+		dest[i] = src[i];
 	}
-
 	return (dest);
 }
