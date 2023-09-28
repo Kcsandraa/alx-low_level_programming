@@ -16,7 +16,7 @@ int prime_helper(int x, int d)
 	if (d * d > x)
 		return (1);
 
-	return (prime_helper (x, d + 1));
+	return (prime_helper(x, d + 1));
 }
 
 /**
@@ -27,6 +27,6 @@ int prime_helper(int x, int d)
 int is_prime_number(int n)
 {
 	if (n == 2)
-		return 1;
+		return (1);
 	return (prime_helper(n, 2));
 }
