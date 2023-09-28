@@ -7,6 +7,8 @@ int _putchar(char c);
 
 int sqrt1(int x, int y);
 
+int prime_helper(int x, int d);
+
 void _print_rev_recursion(char *s);
 
 int _strlen_recursion(char *s);
