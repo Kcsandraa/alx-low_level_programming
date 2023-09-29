@@ -26,6 +26,11 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
+		if (a < 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
 		sum += a;
 	}
 	printf("%d\n", sum);
