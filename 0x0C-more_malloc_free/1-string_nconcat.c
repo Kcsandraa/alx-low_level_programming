@@ -9,10 +9,15 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j;
+	unsigned int i, j, len = 0, len1 = 0;
 	char *s3;
 
-	s3 = (char *)malloc(n * sizeof(char *));
+	for (i = 0; s1[i] != '\0'; i++)
+		len++;
+	for (j = 0; s2[j] != '\0'; j++)
+		len1++;
+
+	s3 = (char *)malloc((len + len1 + 1) * sizeof(char *));
 	if (s3 == NULL)
 		return (NULL);
 
