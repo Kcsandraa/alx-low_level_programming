@@ -1,16 +1,5 @@
 #include "3-calc.h"
 #include <stddef.h>
-/**
- * op_t ops - struct op_t
- */
-op_t ops[] = {
-        {"+", op_add},
-        {"-", op_sub},
-        {"*", op_mul},
-        {"/", op_div},
-        {"%", op_mod},
-        {NULL, NULL}
-    };
 
 /**
  * get_op_func - selects the correct function
@@ -21,6 +10,14 @@ op_t ops[] = {
  */
 int (*get_op_func(char *s))(int, int)
 {
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
 	int i;
 
 	i = 0;
