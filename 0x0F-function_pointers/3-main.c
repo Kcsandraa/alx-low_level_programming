@@ -13,18 +13,17 @@ int main(int argc, char *argv[])
 	int i, j, result;
 	int (*fun)(int, int);
 
-	i = atoi(argv[1]);
-	j = atoi(argv[3]);
-	c = argv[2];
-
 	if (argc != 4)
 	{
 		printf("Error\n");
 		_Exit(98);
 	}
+	i = atoi(argv[1]);
+	j = atoi(argv[3]);
+	c = argv[2];
 
 	fun = get_op_func(c);
-	if (fun == NULL)
+	if (fun == NULL || *(c + 1) != '\0')
 	{
 		printf("Error\n");
 		_Exit(99);
