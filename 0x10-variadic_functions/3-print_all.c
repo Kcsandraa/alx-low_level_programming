@@ -44,11 +44,12 @@ void print_all(const char * const format, ...)
 				else
 					printf("%s", str);
 				break;
+			default:
 		}
 		if ((format[i + 1]) && (c == 'c' || c == 'i' || c == 'f' || c == 's'))
 			printf(", ");
 		i++;
 	}
-	va_end(args);
 	printf("\n");
+	va_end(args);
 }
